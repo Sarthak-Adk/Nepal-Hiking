@@ -52,7 +52,7 @@ body {
 }
 
 nav {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -263,6 +263,72 @@ header .section__container {
 .display__grid .grid-1 {
   grid-area: 1/1/3/3;
 }
+
+
+
+/* Contact section styles */
+.contact {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  margin-top: 5rem;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact-wapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-form, .contact-info {
+  width: 48%;
+  background: #fff;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3, .contact-info h3 {
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+
+/* footer */
 
 footer {
   background-color: var(--text-dark);
