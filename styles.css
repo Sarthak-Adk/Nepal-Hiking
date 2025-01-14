@@ -356,7 +356,7 @@ header .section__container {
 
 /* Gears section */
 
-
+/* 
 .top-picks-section {
   text-align: center;
   padding: 40px 20px;
@@ -409,8 +409,58 @@ header .section__container {
   background-color: black;
   color: white;
   cursor: pointer;
-}
+} */
 
+.new-arrivals-section, .top-picks-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+.new-arrivals-section h2, .top-picks-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.products-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.product-card {
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: transform 0.3s;
+}
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.product-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.product-card p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+.view-more-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.product-card:hover {
+  transform: scale(1.05);
+}
 
 
 
