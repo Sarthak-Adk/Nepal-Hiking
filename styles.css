@@ -264,13 +264,161 @@ header .section__container {
   grid-area: 1/1/3/3;
 }
 
+/* About section styles */
+.about-body{
+  background-color: #f9f9f9;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.about-container {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.about-section h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.mission-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+
+ .mission-image img, .story-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.mission-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.mission2-container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+  align-items: center;
+}
+
+.mission-content {
+  max-width: 500px;
+}
+
+.mission-image {
+  flex: 1;
+}
+
+.mission-content h2, .story-section h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .mission-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .mission-content, .mission-image {
+      max-width: 100%;
+  }
+}
+
+
+
+/* Gears section */
+
+
+.top-picks-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.top-picks-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.top-picks-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.view-more-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+
 
 
 /* Contact section styles */
 .contact {
   padding: 2rem;
   background-color: #f9f9f9;
-  margin-top: 5rem;
+  margin-top: 0rem;
 }
 
 .contact h2 {
