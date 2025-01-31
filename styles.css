@@ -64,6 +64,7 @@ nav {
   justify-content: space-between;
 }
 
+
 .nav__logo a {
   text-decoration: none;
   color: var(--extra-light);
@@ -462,11 +463,52 @@ header .section__container {
   transform: scale(1.05);
 }
 
+/* services section styles */
+
+
+.main-service {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 20px auto;
+  display: grid;
+  background-color: #f9f9f9;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.service {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.service h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+}
+
+.service p {
+  color: #666;
+  font-size: 1rem;
+  margin: 15px 0 0;
+  line-height: 1.6;
+}
+
 
 
 /* Contact section styles */
 .contact {
   padding: 2rem;
+  color: var(--text-dark);
   background-color: #f9f9f9;
   margin-top: 0rem;
 }
@@ -525,6 +567,25 @@ button[type="submit"]:hover {
   margin: 0.5rem 0;
 }
 
+.fas{
+margin-right: 10px;
+}
+
+.map-location{
+  background-color: #f9f9f9;
+  color: var(--text-dark);
+  text-align: center;
+}
+.our-location{
+  margin-bottom: 1rem;
+}
+.map{
+  margin-bottom: 1rem;
+  max-width: 80%;
+  height: 550px;
+  margin-left: 10%;
+  border: 1px solid black;
+}
 
 /* footer */
 
