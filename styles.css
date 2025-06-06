@@ -51,7 +51,6 @@ body {
   font-family: var(--font-primary);
 }
 nav {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -480,12 +479,92 @@ header .section__container {
 
 /* services section styles */
 
-.trekking-packages h2 {
-  text-align: center;
-  margin: 4rem 0px;
-}
 
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #2a5d70;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .service-card {
+      background: #f7f9fc;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .service-card h3 {
+      font-size: 1.4rem;
+      margin: 16px;
+      color: #2a5d70;
+    }
+
+    .service-card p {
+      margin: 0 16px 20px;
+      color: #555;
+    }
+
+    .cta {
+      text-align: center;
+      background-color: #2a5d70;
+      color: white;
+      padding: 60px 20px;
+      border-radius: 10px;
+      margin-top: 60px;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .cta a {
+      background: #ff914d;
+      color: white;
+      padding: 14px 28px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #e66d21;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .cta h2 {
+        font-size: 1.5rem;
+      }
+    }
 
 
 /* Contact section styles */
